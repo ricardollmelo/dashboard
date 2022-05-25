@@ -1,8 +1,6 @@
 from bcb import sgs
 import streamlit as st
 import bcb
-bcb = "bcb"
-bcb = ("banco central")
 ##### Definindo os títulos #####
 st.header('Dashboard Macroeconômico')
 st.markdown(
@@ -17,3 +15,6 @@ st.line_chart(ipca)
 st.title('Taxa de desemprego (%)')
 desem = sgs.get({'Taxa de desemprego (%)': 24369}, start='2012-03-01')
 st.line_chart(desem)
+st.title('INPC')
+inpc = sgs.get({'INPC': 188}, start='2010-01-01')
+st.line_chart(inpc)
