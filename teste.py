@@ -1,6 +1,7 @@
-import bcb
-import streamlit as st
 from bcb import sgs
+import streamlit as st
+import bcb
+bcb = "bcb"
 bcb = ("banco central")
 ##### Definindo os títulos #####
 st.header('Dashboard Macroeconômico')
