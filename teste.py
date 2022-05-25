@@ -1,11 +1,14 @@
-from bcb import sgs
-import streamlit as st
-import pandas as pd
-import pyIpeaData as ipea
 import seaborn as sb
+import pyIpeaData as ipea
+import pandas as pd
+import streamlit as st
+from bcb import sgs
+bcb = ("banco central")
+##### Definindo os títulos #####
 st.header('Dashboard Macroeconômico')
 st.markdown(
     '*Os principais indicadores macroeconômicos - IPCA; PIB; BALANÇA COMERCIAL, INPC, DESEMPREGO.*')
+###### Importando dados ######
 selic = sgs.get({'selic': 432}, start='2010-01-01')
 st.title('SELIC')
 st.line_chart(selic)
