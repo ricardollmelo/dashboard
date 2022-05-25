@@ -1,3 +1,4 @@
+import bcb
 import streamlit as st
 from bcb import sgs
 bcb = ("banco central")
