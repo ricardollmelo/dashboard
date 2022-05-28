@@ -34,6 +34,7 @@ if escolha == "Juros":
     st.markdown('**SELIC**')
     chart_data = selic
     st.line_chart(chart_data)
+st.markdown("<hr/>",unsafe_allow_html=True)
 if escolha == "Preços":
     st.markdown('**IPCA**')
     chart_data2 = ipca
