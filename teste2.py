@@ -41,6 +41,9 @@ if escolha == "Preços":
     st.markdown('**IPCA-15**')
     chart_data2 = ipca15
     st.line_chart(chart_data2)
+    st.markdown('**IGP-M**')
+    chart_data2 = igpm
+    st.line_chart(chart_data2)
 if escolha == "Desemprego":
     st.markdown('**Taxa de desemprego**')
     chart_data2 = desem
